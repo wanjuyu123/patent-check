@@ -1,10 +1,96 @@
-# Environment variables
-.env
+# ===================================================================
+# Python Project .gitignore
+# ===================================================================
 
-# Python cache
+# -------------------------------------------------------------------
+# 1. Credentials & Secrets
+# NEVER commit sensitive environment variables or secret files.
+# -------------------------------------------------------------------
+.env
+*.env
+*.env.*
+!.env.example
+
+
+# -------------------------------------------------------------------
+# 2. Project Data, Outputs & Logs
+# Ignore input data, generated outputs, cache, and state files.
+# These should not be version controlled.
+# -------------------------------------------------------------------
+patents/
+mappings/
+outputs/
+*.log
+logs/
+
+
+# -------------------------------------------------------------------
+# 3. Python Virtual Environments
+# Never commit your virtual environment directory.
+# -------------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+*.venv
+
+
+# -------------------------------------------------------------------
+# 4. Python Cache & Compiled Files
+# These are generated automatically and are machine-specific.
+# -------------------------------------------------------------------
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# IDE settings
+
+# -------------------------------------------------------------------
+# 5. Distribution / Packaging
+# Ignore packaging and distribution artifacts.
+# -------------------------------------------------------------------
+.eggs/
+*.egg-info/
+*.egg
+dist/
+build/
+wheels/
+*.tar.gz
+*.whl
+
+
+# -------------------------------------------------------------------
+# 6. IDE & Editor Configuration
+# User-specific settings for development environments.
+# -------------------------------------------------------------------
+# JetBrains (PyCharm, IntelliJ)
 .idea/
+
+# Visual Studio Code
 .vscode/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+
+# -------------------------------------------------------------------
+# 7. OS Generated Files
+# System-specific files that have no place in a repository.
+# -------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+
+# -------------------------------------------------------------------
+# 8. Jupyter Notebook Checkpoints
+# Ignore auto-generated checkpoint files from Jupyter.
+# -------------------------------------------------------------------
+.ipynb_checkpoints/
