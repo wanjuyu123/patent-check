@@ -1,0 +1,25 @@
+{
+  "domains": [
+    "Sensing",
+    "Planning",
+    "Execution",
+    "Support_Systems"
+  ],
+  "items": [
+    {
+      "domain": "Sensing",
+      "technologies": [
+        "Radar_Technology",
+        "Lidar_Technology",
+        "Vision_Sensors"
+      ]
+    },
+    {
+      "domain": "Planning",
+      "technologies": [
+        "Path_Planning_Algorithms",
+        "Behavioral_Decision_Making"
+      ]
+    }
+  ]
+}
