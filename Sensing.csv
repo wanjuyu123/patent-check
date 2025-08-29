@@ -1,0 +1,4 @@
+tech_name	expected_ipc_codes	notes
+Radar_Technology	G01S7/48; G01S13/931; H01Q1/32	Codes can be separated by semicolons.
+Lidar_Technology	G01S17/894; G01S7/481; G02B26/10	Example for another technology.
+Vision_Sensors	G06V20/58; H04N7/18; G06T7/73	Example with wildcard support.
