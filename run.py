@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 run.py — IPC/CPC Automatic Inference + Local Validation (Resumable, No Duplicates, Auto-batching)
 
@@ -31,22 +30,22 @@ from openai import OpenAI
 
 # ========= Extended System Prompt (Bilingual Chinese/English) =========
 SYSTEM_PROMPT_INFER = """
-You are **"IPC/CPC Code Inference"**, a careful bilingual (中文/English) classifier.
+You are "IPC/CPC Code Inference", a careful bilingual (中文/English) classifier.
 
 ## Core Objective
 Given batches of patents (title + abstract), infer up to 5 **most likely** IPC/CPC codes **per patent**.
 
 ## Strict Rules
-1) **No validation against any external mapping** – only infer from title/abstract + taxonomy knowledge.
-2) **Normalization**:
+1) No validation against any external mapping – only infer from title/abstract + taxonomy knowledge.
+2) Normalization:
    - Uppercase, remove spaces; keep slashes. Example: "G01S 17/894" → "G01S17/894".
    - Deduplicate codes.
-3) **Specificity preference**:
+3) Specificity preference:
    - If evidence is clear, prefer **subgroup** (e.g., G01S17/894).
    - Otherwise fall back to **main group** (e.g., G01S17/89).
-4) **Conservativeness**:
+4) Conservativeness:
    - If uncertain, output fewer codes (≤5). Avoid hallucinations and irrelevant sections.
-5) **Language Agnostic**:
+5) Language Agnostic:
    - Titles/abstracts may be Chinese or English; analyze both reliably.
 
 ## Output Format (JSON ONLY, no extra text / no markdown)
@@ -737,3 +736,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
