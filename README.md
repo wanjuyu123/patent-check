@@ -4,16 +4,16 @@ This project provides a robust, end-to-end solution for automatically inferring 
 
 本项目提供了一个端到端的自动化解决方案，利用大型语言模型（LLM，如 GPT-4o）为专利自动推断 IPC/CPC 分类号，并对照本地的专家知识库对推断结果进行验证和评估。
 
-## **✨ Features (主要特性)**
+## **Features (主要特性)**
 
-* **🤖 LLM-based Inference**: Leverages the power of models like GPT-4o to analyze patent titles and abstracts for accurate code inference.  
-* **✔️ Local Validation**: Compares LLM results against a local "ground truth" mapping to quantitatively measure performance.  
-* **▶️ Resumable Execution**: Uses checkpoints to save progress, allowing you to resume interrupted jobs without starting over.  
-* **⚡ API Call Caching**: Caches every API request payload and its response, avoiding redundant calls and saving time and money on subsequent runs.  
-* **⚙️ Auto-Batching**: Dynamically adjusts the number of patents sent per API call to maximize throughput while respecting the model's context window limits.  
-* **🔧 Highly Configurable**: Almost all parameters, including file paths, model names, and validation thresholds, can be configured via command-line arguments.
+* ** LLM-based Inference**: Leverages the power of models like GPT-4o to analyze patent titles and abstracts for accurate code inference.  
+* ** Local Validation**: Compares LLM results against a local "ground truth" mapping to quantitatively measure performance.  
+* ** Resumable Execution**: Uses checkpoints to save progress, allowing you to resume interrupted jobs without starting over.  
+* ** API Call Caching**: Caches every API request payload and its response, avoiding redundant calls and saving time and money on subsequent runs.  
+* ** Auto-Batching**: Dynamically adjusts the number of patents sent per API call to maximize throughput while respecting the model's context window limits.  
+* ** Highly Configurable**: Almost all parameters, including file paths, model names, and validation thresholds, can be configured via command-line arguments.
 
-## **🚀 Getting Started (快速开始)**
+## ** Getting Started (快速开始)**
 
 ### **Prerequisites (环境要求)**
 
@@ -66,7 +66,7 @@ The script requires an OpenAI API key to function.
    Open the .env file and add your OpenAI API key:  
    OPENAI\_API\_KEY="sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
-## **💻 Usage (如何运行)**
+## **Usage (如何运行)**
 
 You can run the script from the command line.
 
@@ -91,7 +91,7 @@ python run.py \--model gpt-4o \--auto-batch \--patents-dir /path/to/your/patents
 | \--tau-strong | The minimum A+B match rate to be considered "supported". | 0.35 |
 | \--tau-min | The minimum A+B match rate to be considered "partially\_supported". | 0.15 |
 
-## **📊 Output (结果输出)**
+## **Output (结果输出)**
 
 The script generates all output in the outputs/ directory:
 
@@ -100,6 +100,6 @@ The script generates all output in the outputs/ directory:
 * outputs/state/: Holds the checkpoints.json file for resuming execution.  
 * outputs/summary\_all.csv: A final, consolidated report summarizing the results for all processed technologies.
 
-## **📄 License (许可证)**
+## **License (许可证)**
 
 This project is licensed under the MIT License. See the LICENSE file for details.
