@@ -6,14 +6,14 @@ This project provides a robust, end-to-end solution for automatically inferring 
 
 ## **Features (主要特性)**
 
-* ** LLM-based Inference**: Leverages the power of models like GPT-4o to analyze patent titles and abstracts for accurate code inference.  
-* ** Local Validation**: Compares LLM results against a local "ground truth" mapping to quantitatively measure performance.  
-* ** Resumable Execution**: Uses checkpoints to save progress, allowing you to resume interrupted jobs without starting over.  
-* ** API Call Caching**: Caches every API request payload and its response, avoiding redundant calls and saving time and money on subsequent runs.  
-* ** Auto-Batching**: Dynamically adjusts the number of patents sent per API call to maximize throughput while respecting the model's context window limits.  
-* ** Highly Configurable**: Almost all parameters, including file paths, model names, and validation thresholds, can be configured via command-line arguments.
+* **LLM-based Inference**: Leverages the power of models like GPT-4o to analyze patent titles and abstracts for accurate code inference.  
+* **Local Validation**: Compares LLM results against a local "ground truth" mapping to quantitatively measure performance.  
+* **Resumable Execution**: Uses checkpoints to save progress, allowing you to resume interrupted jobs without starting over.  
+* **API Call Caching**: Caches every API request payload and its response, avoiding redundant calls and saving time and money on subsequent runs.  
+* **Auto-Batching**: Dynamically adjusts the number of patents sent per API call to maximize throughput while respecting the model's context window limits.  
+* **Highly Configurable**: Almost all parameters, including file paths, model names, and validation thresholds, can be configured via command-line arguments.
 
-## ** Getting Started (快速开始)**
+## **Getting Started (快速开始)**
 
 ### **Prerequisites (环境要求)**
 
