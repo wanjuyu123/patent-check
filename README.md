@@ -2,7 +2,7 @@
 
 This project provides a robust, end-to-end solution for automatically inferring IPC/CPC classification codes for patents using Large Language Models (LLMs) like GPT-4o. It then validates the AI-generated codes against a local, expert-defined mapping to evaluate the model's accuracy.
 
-本项目提供了一个端到端的自动化解决方案，利用大型语言模型（LLM，如 GPT-4o）为专利自动推断 IPC/CPC 分类号，并对照本地的专家知识库对推断结果进行验证和评估。
+本项目提供了一个端到端的自动化解决方案，利用大型语言模型为专利自动推断 IPC/CPC 分类号，并对照本地的专家知识库对推断结果进行验证和评估。
 
 ## **Features (主要特性)**
 
